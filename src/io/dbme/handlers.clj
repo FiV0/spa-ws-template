@@ -1,4 +1,5 @@
-(ns io.dbme.handlers)
+(ns io.dbme.handlers
+  (:require [lambdaisland.glogc :as log]))
 
 (defmulti -event-msg-handler :id)
 
