@@ -1,12 +1,30 @@
 {:paths ["src" "resources"]
 
  :deps
- {org.clojure/clojure {:mvn/version "1.10.3"}}
+ {
+  org.clojure/clojure        {:mvn/version "1.10.3"}
+  http-kit/http-kit          {:mvn/version "2.5.3"}
+  compojure/compojure        {:mvn/version "1.6.2"}
+  metosin/muuntaja           {:mvn/version "0.6.8"}
+  ring/ring                  {:mvn/version "1.6.1"}
+  ring/ring-defaults         {:mvn/version "0.3.0"}
+  com.taoensso/sente         {:mvn/version "1.16.2"}
+  com.cognitect/transit-clj  {:mvn/version "1.0.324"}
+  com.cognitect/transit-cljs {:mvn/version "0.8.264"}
+
+
+  org.clojure/clojurescript {:mvn/version "1.10.879"}
+  re-frame/re-frame         {:mvn/version "1.2.0"}
+  metosin/reitit-frontend   {:mvn/version "0.5.15"}
+  thheller/shadow-cljs      {:mvn/version "2.15.10"}
+
+
+  }
 
  :aliases
  {:dev
   {:extra-paths ["dev"]
-   :extra-deps  {}}
+   :extra-deps  {binaryage/devtools {:mvn/version "1.0.3"}}}
 
   :test
   {:extra-paths ["test"]

@@ -1,0 +1,25 @@
+{:deps
+ {:aliases [:dev]}
+
+ :builds
+ {:app
+  {:target     :browser
+
+   :modules {:app {:entries [io.dbme.client]
+                   ;; :preloads [devtools.preload]
+                   }}
+
+   :output-dir "resources/public/js/compiled"
+   :asset-path "/js/compiled"
+   :dev        {:compiler-options {:devcards true}}
+   :release    {:compiler-options {:warnings-as-errors true
+                                   :warnings {:redef-in-file false}
+                                   :closure-defines {goog.DEBUG false
+                                                     goog.debug.LOGGING_ENABLED true}}}
+   :js-options {:resolve
+                {"react"     {:export-globals ["React"]}
+                 "react-dom" {:export-globals ["ReactDOM"]}}}
+   :devtools   {:repl-pprint true}}}
+
+ ;; TODO understand
+ :cache-blockers #{}}
