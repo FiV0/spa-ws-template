@@ -9,4 +9,4 @@
 
 (defmethod -event-msg-handler :default
   [{:keys [event id ?data ring-req ?reply-fn send-fn]}]
-  (println (str "Unhandled event: %s" event)))
+  (log/info :unhandled-event event))

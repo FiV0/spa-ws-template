@@ -1,7 +1,7 @@
 ((nil . ((cider-clojure-cli-global-options     . "-A:dev:test:build")
          (cider-preferred-build-tool           . clojure-cli)
          (cider-default-cljs-repl . custom)
-         (cider-custom-cljs-repl-init-form . "(do (user/cljs-repl) (user/browse 8280))")
+         (cider-custom-cljs-repl-init-form . "(do (user/cljs-repl) (user/browse 5000))")
          (cider-redirect-server-output-to-repl . t)
          (cider-repl-display-help-banner       . nil)
          (clojure-toplevel-inside-comment-form . t)

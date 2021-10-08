@@ -22,8 +22,7 @@
 
 (defn start! []
   (router/start!)
-  (start-server! 5000)
-  #_(socket/start-example-broadcaster!))
+  (start-server! 5000))
 
 (defn stop! []
   (router/stop!)
