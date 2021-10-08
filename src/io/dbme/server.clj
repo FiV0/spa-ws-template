@@ -32,4 +32,5 @@
   (start!))
 
 (comment
-  (start!))
+  (start!)
+  (stop!))

@@ -10,7 +10,7 @@
 (def chsk-state (atom nil))
 
 (def config {:type     :auto
-             :packer   :edn #_(sente-transit/get-transit-packer) ;:edn
+             :packer   (sente-transit/get-transit-packer) ;:edn
              :protocol :http
              :host     "localhost"
              :port     5000})
