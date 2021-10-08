@@ -23,3 +23,10 @@
  (fn [_ _]
    (socket/start!)
    {:dispatch [:app/connected true]}))
+
+(rf/reg-event-fx
+ :app/send
+ (fn [_ [_ data]]
+   (socket/send-data data)
+   ;; TODO
+   {}))

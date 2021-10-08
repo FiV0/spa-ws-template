@@ -34,3 +34,6 @@
 (defn start! []
   (create-client!)
   (start-router!))
+
+(defn send-data [data]
+  (@chsk-send! [:some/client-message data]))
