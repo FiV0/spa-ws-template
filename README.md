@@ -49,7 +49,7 @@ For sending stuff from server to client you can look at the [socket](src/io/dbme
 ```clj
 (require '[io.dbme.socket :as socket])
 
-(send-data {:some-new-data true})
+(socket/send-data {:some-new-data true})
 ```
 The data you send is then displayed above the send field in the frontend.
 
